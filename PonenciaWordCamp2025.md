@@ -54,11 +54,11 @@ Muchos de estos códigos de tracking dejan cookies, así que tendrás que montar
 
 ## ¿Cómo trabajan estos códigos?
 
-Estos códigos detectan e identifican a los usuarios a partir de los clicks en emails que hayan sido enviados desde el CRM.
+Estos códigos detectan e identifican a los usuarios a partir de los clics en emails que hayan sido enviados desde el CRM.
 
-Una vez clican y sin identificados dejan una cookie que nos permite rastrearlo por la web.
+Una vez clican, son identificados por el código de tracking y este deja una cookie que nos permite rastrearlo por la web en ese equipo.
 
-Sin ese primer click en una newsleter no hay identificación y no se rocege información. Un usuario en nuestro CRM si entra directamente en nuestra desde un ordenador sin la cookie no será detectado.
+Sin ese primer clic en una newsletter y otro tipo de email no hay identificación y no se rocege información. Un usuario de nuestro CRM, si entra directamente en nuestra web desde un ordenador sin la cookie, no será detectado.
 
 ## ¿Qué permiten estos códigos solo con meterlos?
 
@@ -153,6 +153,32 @@ XXX
 **Desventajas:**
 
 * XXX
+
+---
+
+# Perfiles de usuarios
+
+Otra forma bastante común de conectar tu web en WordPress con tu CRM es crear un editor de perfil en tu web para que los propios contactos puedan editar sus datos y sus preferencias de forma que ellos directamente nos den informacion que podemos usar.
+
+## Consideraciones
+
+* No debemos almacenar contraseñas en nuestro CRM, lo suyo es usar el login/registro de WordPress o generar algún tipo de hash temporal que se envíe al correo.
+
+## ¿Qué usar para cada tipo de datos?
+
+XXX
+
+---
+
+# Sacando información del CRM para mostrarlo en WordPress
+
+No es muy normal, pero hay veces en que el CRM va a alimentar nuestra web.
+
+**Caso práctico:** Tenemos una asociación que tiene etiquetado a todas sus socias. La web muestra las fichas de las asociadas con sus datos más importantes. Esa información se saca del CRM y cuando se modifica en el CRM se modifica en la web.
+
+Este tipo de conexiones van a necesitar desarrollos propios pero por suerte suelen ser rápidos y sencillos.
+
+**Consejos:** Si no es importante que los datos estén actualizados al minuto trata de cachearlos lo máximo posible. El listado de socios del caso práctico puede pedirse una vez al día y tirar de ese cacheo hasta el día siguiente 
 
 ---
 
