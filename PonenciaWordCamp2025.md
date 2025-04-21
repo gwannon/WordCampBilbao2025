@@ -32,6 +32,13 @@ Muchos CRM dan pruebas gratuitas de 15 días o similar. No es una perdida de tie
 
 # El código de tracking
 
+La forma principal de conectar tu WordPress y tu CRM es un código de tracking.
+
+Suele ser meter un código paracido a Analytics en todas las páginas de la web. Hay muchas formas para meter estos códigos.
+
+Directa
+
+
 XXX
 
 ## Obligaciones legales
