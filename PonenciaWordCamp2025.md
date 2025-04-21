@@ -6,7 +6,8 @@ Pero primero debes **aprender a conectarlos**.
 
 LOGO DE CREADO SIN IA
 
-LOGO FEMENINO genérico.
+LOGO FEMENINO GENÉRICO
+
 ---
 
 En esta ponencia veremos las diferentes formas que permiten que se comuniquen entre sí estos dos elementos fundamentales de tu estrategia de marketing con ejemplos sencillos de algunos de los CRM más populares, como:
@@ -66,6 +67,12 @@ Este simple código os da ya mucho potencial entre muchas de las opciones podemo
 * Saber las paginas que visita.
 * XXX
 
+**Caso práctico:**
+
+Todos los enlaces en Linkedin tienen unos parámetros utm que les marca como que vienen de LinkedIn. Si el código detecta un usuario que visita una página tiene esos parámetros utm, le mete una etiqueta «usuario-linkedin». 
+
+Esa etiqueta la usamos luego para tener listados de emails para crear audiencias en Linkedin y para mandar campañas para promocionar LinkedIn, pidiéndoles que den me gusta y compartan.
+
 ---
 
 # URL de tracking de clics
@@ -92,8 +99,8 @@ La mayoría de CRM dan códigos para incrustar formularios en tu web. Son códig
 
 **Ventajas:**
 
-* Muy fácil de crear e integrar.
-* La conexión es directa.
+* Muy fácil de crear e integrar y exigen pocos conocimientos.
+* La conexión es directa, no debería haber fallos.
 * Ellos se encargan de meter la cookie de rastreoo similares para poder seguir al usuario.
 
 **Desventajas:**
@@ -101,6 +108,7 @@ La mayoría de CRM dan códigos para incrustar formularios en tu web. Son códig
 * Cuando quieres meter campos especiales que no están en el CRM, te obliga a crear campus personalizados en el CRM para guardar esa información. A la larga creas montones de campos que casi mi se usan.
 * No tienen buena integración en el diseño de tu WordPress Y suelen quedar un poco pegote.
 * No permiten conectar a terceros. Los formularios incustrados se conectan difícilmente con elementos de terceros. Tengo una fundación de una empresa grande que todos los contactos recogidos con los formularios deben registrarse en el CRM que usan ellos (Clientify) y con el de la empresa matriz (Salesforce). Los formularios incrustados de Clientify no permiten hacer una conexión también a Salesforce cumpliendo los requerimientos que Salesforce exige.
+* Si cae el CRM caen los formularios de tu web. No suelen fallar, pero puede pasar.
 
 ## Conectados con un plugin
 
@@ -118,6 +126,10 @@ XXX
 
 XXX
 
+Si los formularios están desarrollados con algún plugin como Gravity Forms o Contact Form 7, aseguraros que el plugin de formularios que estéis usando tenga hooks que os permitan meter fácilmente vuestro desarrollo dentro del plugin de formulario.
+
+Por ejemplo, Contact Form 7 tiene un hook llamado «mail_sent» que permite meter tu código tras terminar todo el proceso.
+
 **Ventajas:**
 
 * XXX
@@ -125,6 +137,10 @@ XXX
 **Desventajas:**
 
 * XXX
+
+**Consejos:** Los CRM no suelen funcionar al momento, acumulan tareas y una cola las procesa de forma que puede haber un desfase de minutos entre un disparador y que se ejecute las acciones asociadas.
+
+Si los formularios tienen que enviar algún email al momento con algún dato o confirmación debe hacerlo vuestro desarrollo y el plugin que uséis. Si no es importante que el envío sea inmediato puede hacerlo a través del CRM de forma que se registre aperturas, clics, etc. Y puedas montar flujos y embudos.
 
 ## Mixto
 
