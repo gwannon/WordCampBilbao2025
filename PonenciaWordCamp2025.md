@@ -163,9 +163,14 @@ XXX
 
 Otra forma bastante común de conectar tu web en WordPress con tu CRM es crear un editor de perfil en tu web para que los propios contactos puedan editar sus datos y sus preferencias de forma que ellos directamente nos den información que podemos usar.
 
+Algunos ejemplos:
+
+* [SPRI](https://www.spri.eus/es/preferencias-de-tus-suscripciones/?wpatg_tab=login)
+* [AED](https://www.aedbiz.org/editar-perfil/)
+
 ## Consideraciones
 
-* No debemos almacenar contraseñas en nuestro CRM, lo suyo es usar el login/registro de WordPress o generar algún tipo de «hash» temporal que se envíe al correo.
+* No debemos almacenar contraseñas en nuestro CRM, lo suyo es usar el login/registro de WordPress o generar algún tipo de «hash» temporal que se envíe al correo, así la gestión de seguridad la hace el correo.
 
 ## ¿Qué usar para cada tipo de datos?
 
