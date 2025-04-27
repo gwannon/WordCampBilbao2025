@@ -1,0 +1,2 @@
+{"rule":"REP_CREAR","sentence":"^\\QMuy fácil de crear e integrar y exigen pocos conocimientos.\\E$"}
+{"rule":"REP_CREAR","sentence":"^\\QCuando quieres meter campos especiales que no están en el CRM, te obliga a crear campus personalizados en el CRM para guardar esa información. A la larga creas montones de campos que casi mi se usan.\\E$"}

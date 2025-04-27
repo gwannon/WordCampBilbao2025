@@ -68,7 +68,7 @@ Este simple código os da mucho potencial, ya que nos permite saber las páginas
 
 * Enviarle correos si visita asiduamente una URL interesante.
 * Meter puntos en un LeadScoring si visita contenidos categorizados de un determinado tema.
-* Sacar 
+* Sacar contenidos personalizados al visitar ciertos contenidos
 
 **Caso práctico:**
 
@@ -96,9 +96,14 @@ XXX
 
 La forma más común de conexión entre WordPress y Un CRM es mediante formularios. Está conexión se puede hacer mediante diferentes formas.
 
+* Incrustrados
+* Conectados con un plugin
+* Conectados con un desarrollo propio
+* Mixtos
+
 ## Incrustados
 
-La mayoría de CRM dan códigos para incrustar formularios en tu web. Son códigos muy sencillos de usar, creas el formulario y cortas y pegas el código que te dan en tu web, en páginas, widgets, ...
+La mayoría de CRM dan códigos para incrustar formularios en tu web. Son códigos muy sencillos de usar, generas el formulario y cortas y pegas el código que te dan en tu web, en páginas, widgets, …
 
 **Ventajas:**
 
@@ -190,12 +195,12 @@ Este tipo de conexiones van a necesitar desarrollos propios, pero por suerte sue
 
 **Consejos:** Si no es importante que los datos estén actualizados al minuto trata de cachearlos lo máximo posible. El listado de socios del caso práctico puede pedirse una vez al día y tirar de ese cacheo hasta el día siguiente 
 
----
+--- 
 
 # Consejos
 
 * **Cread un campo de fecha de última modificación.** Los CRM suelen guardar está información, pero no discriminan entre conexiones por API y directamente por web. Con este campo personalizado tendréis control de qué contactos habéis tocado desde WordPress y cuáles han sido tocados de otras formas.
-* **Usad las notas.** Muchos CRM te permiten crear notas de cada contacto, usad esas notas para guardar información variada, por ejemplo, el contenido de las áreas de texto de un formulario. Ponéis un título explicativo y luego el texto que escribió la persona que relleno el formulario. Siempre que se pueda, **no creéis campos específicos para ese tipo de cosas**.
+* **Usad las notas.** Muchos CRM te permiten crear notas de cada contacto, usad esas notas para guardar información variada, por ejemplo, el contenido de las áreas de texto de un formulario. Ponéis un título explicativo y luego el texto que escribió la persona que relleno el formulario. Siempre que se pueda, **no montéis campos específicos para ese tipo de cosas**.
 * **Si puedes hacerse con una automatización del CRM, mejor que programándolo:** al conectar se puede hacer que el script que desarrolléis haga todas las tareas, como meter etiquetas, apuntar a listas, meter puntos en un LeadScoring, etc. O simplemente que lance un disparador de una automatización y esta ejecute todo lo anterior. Piensa que cambiar la programación solo podrá hacerlo una desarrolladora y cambiar una automatización con una interfaz gráfica, puede hacerlo cualquier persona de marketing con unos conocimientos básicos.
 * **Usad los sistemas de almacenamiento de ficheros de PDF, DOC, ODT, etc. que ofrecen los CRM.** Es muy tentador subir un fichero a tu web y usar ese enlace en todas partes. Pero no da gran información. Subiéndolo al sistema de archivos del CRM puedes saber quién y cuándo lo ha descargado si está entre tus contactos y si no, como, mínimo te dará unas buenas estadísticas de descargas. 
 
