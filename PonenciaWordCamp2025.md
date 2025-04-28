@@ -6,7 +6,7 @@ Pero primero debes **aprender a conectarlos**.
 
 [![Pergeñado por inteligencia humana](./imagenes/pergenado.png "Pergeñado por inteligencia humana")](https://bsky.app/profile/angelgropero.bsky.social "Pergeñado por inteligencia humana")
 
-LOGO FEMENINO GENÉRICO
+[![En femenino genérico](./imagenes/en-femenino-generico.png "En femenino genérico")](https://es.wikipedia.org/wiki/Femenino_gen%C3%A9rico "En femenino genérico")
 
 ---
 
@@ -86,17 +86,11 @@ Mirar candadito en el Gmail.
 
 ---
 
-# Conexión directa a la API o crear un middleware
-
-XXX
-
----
-
 # Formularios
 
 La forma más común de conexión entre WordPress y Un CRM es mediante formularios. Está conexión se puede hacer mediante diferentes formas.
 
-* Incrustrados
+* Incrustados
 * Conectados con un plugin
 * Conectados con un desarrollo propio
 * Mixtos
@@ -164,38 +158,51 @@ XXX
 
 ---
 
-# Perfiles de usuarios
+# Perfiles de usuarias
 
-Otra forma bastante común de conectar tu web en WordPress con tu CRM es crear un editor de perfil en tu web para que los propios contactos puedan editar sus datos y sus preferencias de forma que ellos directamente nos den información que podemos usar.
+Otra forma bastante común de conectar tu web en WordPress con tu CRM es crear un editor de perfil en tu web para que las propias usuarias puedan editar sus datos, sus preferencias y sus boletines de forma que ellas directamente nos den la información que luego vamos a usar.
 
 Algunos ejemplos:
 
 * [SPRI](https://www.spri.eus/es/preferencias-de-tus-suscripciones/?wpatg_tab=login)
 * [AED](https://www.aedbiz.org/editar-perfil/)
 
+Los CRM ya ofrecen opciones, pero siempre están fuera de vuestra web y son poco configurables a la hora de diseño y de traducción. Por eso crear una página donde la usuaria se loguee y edite sus datos pueden ser interesantes.
+
 ## Consideraciones
 
+* No son desarrollos complicados, son casi siempre tema de POST/GET de los datos y montarlos en un formulario. Se pueden complicar cuando metemos fotos o documentos como CV en PDF, por ejemplo.
 * No debemos almacenar contraseñas en nuestro CRM, lo suyo es usar el login/registro de WordPress o generar algún tipo de «hash» temporal que se envíe al correo, así la gestión de seguridad la hace el correo.
 
-## ¿Qué usar para cada tipo de datos?
+## ¿Cómo tratar los datos?
 
-XXX
+Lo importante en esos desarrollos en definir bien qué elementos va a tener el formulario y qué campos van a poder rellenar. Datos muy relevantes como pueden ser el tamaño de tu empresa, puede que no interese dejarse de mano de las clientes que editan su perfil.
+
+La mejor opción es cerrar lo más posible la entrada de datos.  Si podéis cerrar las opciones con desplegables, checkboxes, etc. mucho mejor que textos libres. Pensad que una ciudad puede escribirse de muchas formas: Galdakano, Galdacano, Galdakao, etc. 
+
+Os diría que si tenéis dudas con ciertos campos, los duplicáis y luego ver como funcionan las usuarias, tomáis una decisión de mantenerlo separado o fusionáis. Siguiendo el ejemplo anterior del tamaño de empresa, podemos tener el campo del CRM «tamaño_empresa» que usa marketing para sus segmentos y creamos otro para «tamaño_empresa_perfil» para el perfil de usuaria. 
+
+Al de un tiempo podemos ver si hay mucha diferencia entre unos datos y otros y si podemos o no usar el dato del perfil.
 
 ---
 
 # Sacando información del CRM para mostrarlo en WordPress
 
-No es muy normal, pero hay veces en que el CRM va a alimentar nuestra web. 
+Lo mismo que tu WordPress alimenta tu CRM, habrá veces en que el CRM va a alimentar nuestra web. Este tipo de conexiones van a necesitar desarrollos propios y acceso a API. Las funcionalidades pueden muchas, aunque normalmente solo extraen información.
 
-Este tipo de conexiones van a necesitar desarrollos propios, pero por suerte suelen ser rápidos y sencillos.
-
-**Caso práctico 1:** Tenemos una asociación que tiene etiquetado a todas sus socias. La web muestra las fichas de las asociadas con sus datos más importantes. Esa información se saca del CRM y cuando se modifica en el CRM se modifica en la web.
+**Caso práctico 1:** Tenemos una [asociación](https://www.aedbiz.org/nuestras-asociadas/9) que tiene etiquetada a todas sus socias. La web muestra las fichas de las asociadas con sus datos más importantes. Esa información se saca del CRM y cuando se modifica en el CRM se modifica en la web.
 
 **Caso práctico 2:** Se desarrolló un plugin que creaba un mini-sistema de contenido publicitario personalizado. Cada contacto tenía una serie de «LeadScorings» basados en sus intereses. En el admin se podían crear contenidos muy sencillos (titular, foto y texto) y asignarle un «LeadScoring» y un máximo y un mínimo. Si un contacto identificado con puntos en ese interés dentro de los parámetros establecidos, visitaba la web veía esos contenidos en determinadas partes de la web como el «sidebar» o el «footer». No eran muy intrusivos porque eran publicidad interna, pero lo interesante es que estaba bastante personalizada.
 
 **Consejos:** Si no es importante que los datos estén actualizados al minuto trata de cachearlos lo máximo posible. El listado de socios del caso práctico puede pedirse una vez al día y tirar de ese cacheo hasta el día siguiente 
 
 --- 
+
+# Conexión directa a la API o crear un middleware
+
+XXX
+
+---
 
 # Consejos
 
@@ -212,9 +219,11 @@ XXX
 
 ---
 
-# Enlaces
+# Miscelánea
 
-* [Ponencia](https://github.com/gwannon/WordCampBilbao2025) XXX
+## Enlaces
+
+* [Ponencia](https://github.com/gwannon/WordCampBilbao2025)
 
 ## Plugins
 
@@ -222,5 +231,5 @@ XXX
 
 ## Librerías
 
-* [PHPClientifyAPI](https://github.com/gwannon/PHPClientifyAPI) XXX
-* [PHPActiveCampaignAPI](https://github.com/gwannon/PHPActiveCampaignAPI) XXX
+* [PHPClientifyAPI](https://github.com/gwannon/PHPClientifyAPI)
+* [PHPActiveCampaignAPI](https://github.com/gwannon/PHPActiveCampaignAPI)
