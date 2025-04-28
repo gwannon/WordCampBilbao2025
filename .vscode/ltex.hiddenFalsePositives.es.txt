@@ -1,2 +1,7 @@
 {"rule":"REP_CREAR","sentence":"^\\QMuy fácil de crear e integrar y exigen pocos conocimientos.\\E$"}
 {"rule":"REP_CREAR","sentence":"^\\QCuando quieres meter campos especiales que no están en el CRM, te obliga a crear campus personalizados en el CRM para guardar esa información. A la larga creas montones de campos que casi mi se usan.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QGaldakano, Galdacano, Galdakao, etc.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QSiguiendo el ejemplo anterior del tamaño de empresa, podemos tener el campo del CRM «tamaño_empresa» que usa marketing para sus segmentos y creamos otro para «tamaño_empresa_perfil» para el perfil de usuaria.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QTrabajo en Eñutt Comunicación principalmente desarrollando para clientes en temas de CRM como SPRI, IHOBE, BEAZ o Gaztenpresa.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QPlugin gratuito que permite hacer una conexión entre varios plugins de formularios como «Contact Form 7» o «WP Forms» y CRM como «Holded» o «Clientify».\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QSPRI\nAED\\E$"}

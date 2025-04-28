@@ -22,3 +22,6 @@ PHPClientifyAPI
 PHPActiveCampaignAPI
 sidebar
 LeadScorings
+checkboxes
+GET
+B2Evo

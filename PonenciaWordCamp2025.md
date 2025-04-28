@@ -78,14 +78,6 @@ Esa etiqueta la usamos luego para tener listados de emails para crear audiencias
 
 ---
 
-# URL de tracking de clics
-
-XXX
-
-Mirar candadito en el Gmail.
-
----
-
 # Formularios
 
 La forma más común de conexión entre WordPress y Un CRM es mediante formularios. Está conexión se puede hacer mediante diferentes formas.
@@ -93,7 +85,7 @@ La forma más común de conexión entre WordPress y Un CRM es mediante formulari
 * Incrustados
 * Conectados con un plugin
 * Conectados con un desarrollo propio
-* Mixtos
+* Mixtos que se sería una combinación de todos los anteriores.
 
 ## Incrustados
 
@@ -126,7 +118,7 @@ XXX
 
 ## Conectados con un desarrollo propio
 
-XXX
+La opción de desarrollar nuestro propio sistema es una buena decisión, pero no está al alcance de todos.
 
 Si los formularios están desarrollados con algún plugin como Gravity Forms o Contact Form 7, aseguraros que el plugin de formularios que estéis usando tenga «hooks» que os permitan meter fácilmente vuestro desarrollo dentro del plugin de formulario.
 
@@ -134,27 +126,19 @@ Por ejemplo, Contact Form 7 tiene un «hook» llamado «mail_sent» que permite 
 
 **Ventajas:**
 
-* XXX
+* Podemos meter toda la personalización que queramos y hacer que interactúen muchos plugins de tu WordPress. Nos permiten depurar mucho mejor los datos del formulario. 
+* También permite interactuar varios Plugins. Hay plugins que conectan CF7 con varios CRM y otros plugins que conectan WooCommerce con tu CRM, pero si queremos que nos envíen el contenido del carrito de compra de WooCommerce cuando rellena el formulario de consulta creado con CF7 no hay plugin que lo conecte todo.
+* Permite montar varias conexiones. No es común, pero puede darse algunas veces que tengas que hacer varias conexiones a diferentes CRM y puede haber colisiones entre diferentes plugins, cada uno de que tira contra un CRM distinto.
 
 **Desventajas:**
 
-* XXX
+* Supone un mayor coste y tiempo de implementación. Aunque los costes son cada vez más baratos debido a que puedes aprovechar el código ya creado.
 
-**Consejos:** Los CRM no suelen funcionar al momento, acumulan tareas y una cola las procesa de forma que puede haber un desfase de minutos entre un disparador y que se ejecute las acciones asociadas.
+**Consejos:** 
 
-Si los formularios tienen que enviar algún email al momento con algún dato o confirmación debe hacerlo vuestro desarrollo y el plugin que uséis. Si no es importante que el envío sea inmediato puede hacerlo a través del CRM de forma que se registre aperturas, clics, etc. y puedas montar flujos y embudos.
-
-## Mixto
-
-XXX
-
-**Ventajas:**
-
-* XXX
-
-**Desventajas:**
-
-* XXX
+* No tenemos que partir de cero, podemos trabajar sobre plugins ya existentes que hacen la conexión y sobre ellos hacer nuestro desarrollo propio.
+* Los CRM no suelen funcionar al momento, acumulan tareas y una cola las procesa de forma que puede haber un desfase de minutos entre un disparador y que se ejecute las acciones asociadas.
+* Si los formularios tienen que enviar algún email al momento con algún dato o confirmación debe hacerlo vuestro desarrollo y el plugin que uséis. Si no es importante que el envío sea inmediato puede hacerlo a través del CRM de forma que se registre aperturas, clics, etc. y puedas montar flujos y embudos.
 
 ---
 
@@ -202,12 +186,14 @@ Lo mismo que tu WordPress alimenta tu CRM, habrá veces en que el CRM va a alime
 
 XXX
 
+Con la nueva API-REST de WordPress es muy facil crear un middleware XXX
+
 ---
 
 # Consejos
 
 * **Cread un campo de fecha de última modificación.** Los CRM suelen guardar está información, pero no discriminan entre conexiones por API y directamente por web. Con este campo personalizado tendréis control de qué contactos habéis tocado desde WordPress y cuáles han sido tocados de otras formas.
-* **Usad las notas.** Muchos CRM te permiten crear notas de cada contacto, usad esas notas para guardar información variada, por ejemplo, el contenido de las áreas de texto de un formulario. Ponéis un título explicativo y luego el texto que escribió la persona que relleno el formulario. Siempre que se pueda, **no montéis campos específicos para ese tipo de cosas**.
+* **Usad las notas.** Muchos CRM te permiten generar notas de cada contacto, usad esas notas para guardar información variada, por ejemplo, el contenido de las áreas de texto de un formulario. Ponéis un título explicativo y luego el texto que escribió la persona que relleno el formulario. Siempre que se pueda, **no montéis campos específicos para ese tipo de cosas**.
 * **Si puedes hacerse con una automatización del CRM, mejor que programándolo:** al conectar se puede hacer que el script que desarrolléis haga todas las tareas, como meter etiquetas, apuntar a listas, meter puntos en un LeadScoring, etc. O simplemente que lance un disparador de una automatización y esta ejecute todo lo anterior. Piensa que cambiar la programación solo podrá hacerlo una desarrolladora y cambiar una automatización con una interfaz gráfica, puede hacerlo cualquier persona de marketing con unos conocimientos básicos.
 * **Usad los sistemas de almacenamiento de ficheros de PDF, DOC, ODT, etc. que ofrecen los CRM.** Es muy tentador subir un fichero a tu web y usar ese enlace en todas partes. Pero no da gran información. Subiéndolo al sistema de archivos del CRM puedes saber quién y cuándo lo ha descargado si está entre tus contactos y si no, como, mínimo te dará unas buenas estadísticas de descargas. 
 
@@ -215,7 +201,16 @@ XXX
 
 # Jorge Monclús 
 
-XXX
+Soy un desarrollador web con más de 20 años muchos de ellos trabajando con WordPress, de hecho mis primeros proyectos fueron en B2Evo, el origen de WordPress.
+
+Trabajo en Eñutt Comunicación principalmente desarrollando para clientes en temas de CRM como SPRI, IHOBE, BEAZ o Gaztenpresa.
+
+Mis enlaces:
+
+* https://bsky.app/profile/gwannon.com
+* https://github.com/gwannon
+* https://codepen.io/gwannon
+* https://www.linkedin.com/in/jorgemonclus/
 
 ---
 
