@@ -186,7 +186,7 @@ Lo mismo que tu WordPress alimenta tu CRM, habrá veces en que el CRM va a alime
 
 Si vas a trabajar de servidor a servidor, no hay problemas de atacar directamente a la API del CRM, pero **cuando se trabaja desde el navegador**, por ejemplo con eventos de JavaScript, **las credenciales de la API pueden quedar expuestas**. Para evitar esto se puede crear una API intermedia a la que ataque el navegador y que solo ofrezca los «endpoints» que nos interesen de la API del CRM.
 
-{Imagen esquema}
+[![Esquema API intermedia](./imagenes/api-rest.jpg "Esquema API intermedia")](https://es.wikipedia.org/wiki/Femenino_gen%C3%A9rico "Esquema API intermedia")
 
 Con la API-REST de WordPress es muy fácil crear un middleware XXX
 
