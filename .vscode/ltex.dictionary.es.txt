@@ -26,3 +26,6 @@ checkboxes
 GET
 B2Evo
 endpoints
+logs
+framework
+problemón

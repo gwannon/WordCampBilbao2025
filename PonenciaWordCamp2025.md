@@ -94,6 +94,7 @@ La mayoría de CRM dan códigos para incrustar formularios en tu web. Son códig
 **Ventajas:**
 
 * Muy fácil de crear e integrar y exigen pocos conocimientos.
+* Gratuito.
 * La conexión es directa, no debería haber fallos.
 * Ellos se encargan de meter la cookie de rastreo o similares para poder seguir al usuario.
 
@@ -106,15 +107,18 @@ La mayoría de CRM dan códigos para incrustar formularios en tu web. Son códig
 
 ## Conectados con un plugin
 
-XXX
+Como siempre en temas de WordPress, siempre ha habido alguien antes con tu mismo problema y que ha creado un plugin para solucionarlo, así que plugin conectores de CRM hay unos cuantos. Son más o menos amplios y permiten más o menos opciones. Pero todos hacen más o menos las mismas funciones. Meter los datos del usuario como contacto o empresa en tu CRM.
+
+Luego los habrá que dan elementos condicionales, lanzar automatizaciones, etc. pero la esencia es la misma.
 
 **Ventajas:**
 
-* XXX
+* El tiempo de desarrollo y configuración es muy bajo, por no decir mínimo. Instalar, activar y pocos minutos tenemos un formulario conectado a nuestro CRM.
+* Precio asequible.
 
 **Desventajas:**
 
-* XXX
+* Puedes hacer lo que te deje el plugin. Ni más ni menos. Al principio sirven, pero según usas más tu CRM se suelen quedar cortos.
 
 ## Conectados con un desarrollo propio
 
@@ -188,7 +192,7 @@ Si vas a trabajar de servidor a servidor, no hay problemas de atacar directament
 
 [![Esquema API intermedia](./imagenes/api-rest.jpg "Esquema API intermedia")](https://es.wikipedia.org/wiki/Femenino_gen%C3%A9rico "Esquema API intermedia")
 
-Con la API-REST de WordPress es muy fácil crear una API intermedia, ya que la propia API-Rest de WordPress te da un buen framework de desarrollo y este desarrollo solo tiene que recoger los mismos datos que la API del CRM y reenviarselos usando las credenciales.
+Con la API-REST de WordPress es muy fácil montar una API intermedia, ya que la propia API-Rest de WordPress te da un buen framework de desarrollo y este desarrollo solo tiene que recoger los mismos datos que la API del CRM y reenviárselos usando las credenciales.
 
 El principal trabajo es decidir que endpoints de la API del CRM quiero usar y necesito y si es seguro poder usarlo en abierto.
 

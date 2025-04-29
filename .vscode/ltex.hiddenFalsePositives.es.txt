@@ -5,3 +5,4 @@
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QTrabajo en Eñutt Comunicación principalmente desarrollando para clientes en temas de CRM como SPRI, IHOBE, BEAZ o Gaztenpresa.\\E$"}
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QPlugin gratuito que permite hacer una conexión entre varios plugins de formularios como «Contact Form 7» o «WP Forms» y CRM como «Holded» o «Clientify».\\E$"}
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QSPRI\nAED\\E$"}
+{"rule":"REP_CREAR","sentence":"^\\QCon la API-REST de WordPress es muy fácil crear una API intermedia, ya que la propia API-Rest de WordPress te da un buen framework de desarrollo y este desarrollo solo tiene que recoger los mismos datos que la API del CRM y reenviarselos usando las credenciales.\\E$"}
