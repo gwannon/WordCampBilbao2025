@@ -188,7 +188,15 @@ Si vas a trabajar de servidor a servidor, no hay problemas de atacar directament
 
 [![Esquema API intermedia](./imagenes/api-rest.jpg "Esquema API intermedia")](https://es.wikipedia.org/wiki/Femenino_gen%C3%A9rico "Esquema API intermedia")
 
-Con la API-REST de WordPress es muy fácil crear un middleware XXX
+Con la API-REST de WordPress es muy fácil crear una API intermedia, ya que la propia API-Rest de WordPress te da un buen framework de desarrollo y este desarrollo solo tiene que recoger los mismos datos que la API del CRM y reenviarselos usando las credenciales.
+
+El principal trabajo es decidir que endpoints de la API del CRM quiero usar y necesito y si es seguro poder usarlo en abierto.
+
+**Consejos y consideraciones:**
+
+* **Mejor POST que GET.** Aunque parezca al revés es más seguro los POST que los GET. Que metan datos es malo, pero que los saquen es un problemón.
+* **Capa extra de seguridad.** Podemos meter restricciones de seguridad que la API del CRM no tenga. Si hay un número inusual de peticiones desde la IP puedes bajar esa IP.
+* **Estadísticas:** Puede ser interesante unos logs de consumo de la API intermedia de los luego sacar estadísticas para la gente de marketing.
 
 ---
 
