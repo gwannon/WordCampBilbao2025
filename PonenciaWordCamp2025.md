@@ -182,11 +182,13 @@ Lo mismo que tu WordPress alimenta tu CRM, habrá veces en que el CRM va a alime
 
 --- 
 
-# Conexión directa a la API o crear un middleware
+# Conexión directa a la API o crear una API intermedia
 
-XXX
+Si vas a trabajar de servidor a servidor, no hay problemas de atacar directamente a la API del CRM, pero **cuando se trabaja desde el navegador**, por ejemplo con eventos de JavaScript, **las credenciales de la API pueden quedar expuestas**. Para evitar esto se puede crear una API intermedia a la que ataque el navegador y que solo ofrezca los «endpoints» que nos interesen de la API del CRM.
 
-Con la nueva API-REST de WordPress es muy facil crear un middleware XXX
+{Imagen esquema}
+
+Con la API-REST de WordPress es muy fácil crear un middleware XXX
 
 ---
 
@@ -201,7 +203,7 @@ Con la nueva API-REST de WordPress es muy facil crear un middleware XXX
 
 # Jorge Monclús 
 
-Soy un desarrollador web con más de 20 años muchos de ellos trabajando con WordPress, de hecho mis primeros proyectos fueron en B2Evo, el origen de WordPress.
+Soy un **desarrollador web con más de 20 años de experiencia**, muchos de ellos trabajando con WordPress. De hecho, mis primeros proyectos fueron en B2Evo, el origen de WordPress.
 
 Trabajo en Eñutt Comunicación principalmente desarrollando para clientes en temas de CRM como SPRI, IHOBE, BEAZ o Gaztenpresa.
 
@@ -218,13 +220,14 @@ Mis enlaces:
 
 ## Enlaces
 
-* [Ponencia](https://github.com/gwannon/WordCampBilbao2025)
+* [Ponencia](https://github.com/gwannon/WordCampBilbao2025): Todo el código fuente de la ponencia para que puedas usarlo como quieras.
 
 ## Plugins
 
 * [FormsCRM](https://es.wordpress.org/plugins/formscrm/): Plugin gratuito que permite hacer una conexión entre varios plugins de formularios como «Contact Form 7» o «WP Forms» y CRM como «Holded» o «Clientify».
+* [Add-on de Gravity Forms para Active Campaign](https://www.activecampaign.com/apps/gravity-forms-integration): Add-on para Gravity Forms que conecta tus formularios con Active Campaign y tiene bastantes opciones de conexión. 
 
-## Librerías
+## Librerías propias
 
-* [PHPClientifyAPI](https://github.com/gwannon/PHPClientifyAPI)
-* [PHPActiveCampaignAPI](https://github.com/gwannon/PHPActiveCampaignAPI)
+* [PHPClientifyAPI](https://github.com/gwannon/PHPClientifyAPI): Clase de PHP para manejar los contactos del CRM de Clientify.
+* [PHPActiveCampaignAPI](https://github.com/gwannon/PHPActiveCampaignAPI): Clase de PHP para manejar contactos del CRM a ActiveCampaign

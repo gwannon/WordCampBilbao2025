@@ -25,3 +25,4 @@ LeadScorings
 checkboxes
 GET
 B2Evo
+endpoints
