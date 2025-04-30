@@ -1,6 +1,6 @@
 # Conectando tu WordPress a un CRM
 
-Tu WordPress puede ser un gran aliado de tu CRM, surtiéndole de mucha información, como nuevos contactos y leadscorings. Y esto también funciona al revés, proveyendo a tu WordPress con información sobre el contacto que le ayude a vender.
+Tu WordPress puede ser un gran aliado de tu CRM, surtiéndole de mucha información, como nuevos contactos y leadscorings. Y esto también funciona al revés, proveyendo a tu WordPress con información sobre la clienta que le ayude a vender.
 
 Pero primero debes **aprender a conectarlos**.
 
@@ -10,7 +10,7 @@ Pero primero debes **aprender a conectarlos**.
 
 ---
 
-En esta ponencia veremos las diferentes formas que permiten que se comuniquen entre sí estos dos elementos fundamentales de tu estrategia de marketing con ejemplos sencillos de algunos de los CRM más populares, como:
+En esta ponencia veremos las diferentes formas que permiten que se comuniquen entre sí estos dos elementos fundamentales de tu estrategia de marketing con ejemplos sencillos de algunos de los CRM más populares, como ...
 
 * ActiveCampaign
 * HubSpot
@@ -29,7 +29,7 @@ Si todavía no tienes un CRM o estás decidiendo te entre varios estos son mis c
 
 * Sí o sí tu CRM o, por lo menos el plan que escojas, debe tener una API y cuanto más completa mejor. Con buena documentación y a poder ser con alguna librería ya desarrollada en el lenguaje que vayas a usar.
 * Sabed si vuestro hosting puede conectarse a otros servidores. No es muy normal, pero a veces están capados. Es bastante común con instituciones y grandes empresas preocupadas con la ciberseguridad. Hablad con el hosting para que meta la IP del CRM en algún tipo de lista blanca.
-* Tratad de saber si tienen servidores europeos. Como están las cosas puede ahorraros muchos problemas si en el futuro hay que migrar todo a sistemas en Europa. 
+* Tratad de saber si tienen servidores europeos. Como están las cosas puede ahorraros muchos problemas si en el futuro hay que migrar todo a sistemas a Europa. 
 * Una búsqueda rápida os puede dar ideas de si vais a tener comunidad, software libre o de pago y empresas desarrollando para ese CRM a las que pedir ayuda.
 
 Muchos CRM dan periodos de prueba gratuitos de 15 días o similar. No es una perdida de tiempo pedir esas pruebas y hacer algunos tests básicos.
@@ -72,7 +72,7 @@ Este simple código os da mucho potencial, ya que nos permite saber las páginas
 
 **Caso práctico:**
 
-Todos los enlaces en LinkedIn tienen unos parámetros «UTM» que les marca como que vienen de LinkedIn. Si el código detecta un usuario que visita una página tiene esos parámetros «UTM», le mete una etiqueta «usuario-linkedin». 
+Todos los enlaces en LinkedIn tienen unos parámetros «UTM» que les marca como que vienen de LinkedIn. Si el código detecta que una usuaria visita una URL que tiene esos parámetros «UTM», le mete una etiqueta #usuario-linkedin.
 
 Esa etiqueta la usamos luego para tener listados de emails para crear audiencias en LinkedIn y para mandar campañas para promocionar LinkedIn, pidiéndoles que den me gusta y compartan.
 
@@ -80,7 +80,7 @@ Esa etiqueta la usamos luego para tener listados de emails para crear audiencias
 
 # Formularios
 
-La forma más común de conexión entre WordPress y Un CRM es mediante formularios. Está conexión se puede hacer mediante diferentes formas.
+La forma más común de conexión entre WordPress y un CRM es mediante formularios. Está conexión se puede hacer mediante diferentes formas.
 
 * Incrustados
 * Conectados con un plugin
@@ -93,7 +93,7 @@ La mayoría de CRM dan códigos para incrustar formularios en tu web. Son códig
 
 **Ventajas:**
 
-* Muy fácil de crear e integrar y exigen pocos conocimientos.
+* Muy fáciles de crear e integrar y exigen pocos conocimientos.
 * Gratuito.
 * La conexión es directa, no debería haber fallos.
 * Ellos se encargan de meter la cookie de rastreo o similares para poder seguir al usuario.
@@ -102,12 +102,12 @@ La mayoría de CRM dan códigos para incrustar formularios en tu web. Son códig
 
 * Cuando quieres meter campos especiales que no están en el CRM, te obliga a crear campus personalizados en el CRM para guardar esa información. A la larga creas montones de campos que casi mi se usan.
 * No tienen buena integración en el diseño de tu WordPress Y suelen quedar un poco pegote.
-* No permiten conectar a terceros. Los formularios incrustados se conectan difícilmente con elementos de terceros. Tengo una fundación de una empresa grande que todos los contactos recogidos con los formularios deben registrarse en el CRM que usan ellos (Clientify) y con el de la empresa matriz (Salesforce). Los formularios incrustados de Clientify no permiten hacer una conexión también a Salesforce cumpliendo los requerimientos que Salesforce exige.
+* No permiten conectar a terceros. Los formularios incrustados se conectan difícilmente con elementos de terceros. Tengo una fundación de una empresa grande que todas las clientas recogidas con los formularios deben registrarse en el CRM que usan ellas (Clientify) y con el de la empresa matriz (Salesforce). Los formularios incrustados de Clientify no permiten hacer una conexión también a Salesforce cumpliendo los requerimientos que Salesforce exige.
 * Si cae el CRM caen los formularios de tu web. No suelen fallar, pero puede pasar.
 
 ## Conectados con un plugin
 
-Como siempre en temas de WordPress, siempre ha habido alguien antes con tu mismo problema y que ha creado un plugin para solucionarlo, así que plugin conectores de CRM hay unos cuantos. Son más o menos amplios y permiten más o menos opciones. Pero todos hacen más o menos las mismas funciones. Meter los datos del usuario como contacto o empresa en tu CRM.
+Como siempre en temas de WordPress, siempre ha habido alguien antes con tu mismo problema y que ha creado un plugin para solucionarlo, así que plugin conectores de CRM hay unos cuantos. Son más o menos amplios y permiten más o menos opciones. Pero todos hacen más o menos las mismas funciones, meter los datos de la usuaria como clienta o empresa en tu CRM.
 
 Luego los habrá que dan elementos condicionales, lanzar automatizaciones, etc. pero la esencia es la misma.
 
@@ -182,7 +182,7 @@ Lo mismo que tu WordPress alimenta tu CRM, habrá veces en que el CRM va a alime
 
 **Caso práctico 2:** Se desarrolló un plugin que creaba un mini-sistema de contenido publicitario personalizado. Cada contacto tenía una serie de «LeadScorings» basados en sus intereses. En el admin se podían crear contenidos muy sencillos (titular, foto y texto) y asignarle un «LeadScoring» y un máximo y un mínimo. Si un contacto identificado con puntos en ese interés dentro de los parámetros establecidos, visitaba la web veía esos contenidos en determinadas partes de la web como el «sidebar» o el «footer». No eran muy intrusivos porque eran publicidad interna, pero lo interesante es que estaba bastante personalizada.
 
-**Consejos:** Si no es importante que los datos estén actualizados al minuto trata de cachearlos lo máximo posible. El listado de socios del caso práctico puede pedirse una vez al día y tirar de ese cacheo hasta el día siguiente 
+**Consejos:** Si no es importante que los datos estén actualizados al minuto trata de cachearlos lo máximo posible. El listado de socias del caso práctico puede pedirse una vez al día y tirar de ese cacheo hasta el día siguiente 
 
 --- 
 
@@ -199,6 +199,7 @@ El principal trabajo es decidir que endpoints de la API del CRM quiero usar y ne
 **Consejos y consideraciones:**
 
 * **Mejor POST que GET.** Aunque parezca al revés es más seguro los POST que los GET. Que metan datos es malo, pero que los saquen es un problemón.
+* **Filtro de los datos que devuelves.** La API del CRM puede devolver datos sensibles como el email, pero la API intermedia puede filtrar el contenido y no suministrarlo.
 * **Capa extra de seguridad.** Podemos meter restricciones de seguridad que la API del CRM no tenga. Si hay un número inusual de peticiones desde la IP puedes bajar esa IP.
 * **Estadísticas:** Puede ser interesante unos logs de consumo de la API intermedia de los luego sacar estadísticas para la gente de marketing.
 
